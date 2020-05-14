@@ -126,12 +126,12 @@ module Greenlight
     config.maintenance_mode = ENV["MAINTENANCE_MODE"] == "true"
 
     config.report_issue_url = ENV["REPORT_ISSUE_URL"]
-    config.help_url = ENV["HELP_URL"].presence || "https://docs.bigbluebutton.org/greenlight/gl-overview.html"
+    config.help_url = ENV["HELP_URL"].presence || "http://dmkms.com/"
 
     # DEFAULTS
 
     # Default branding image if the user does not specify one
-    config.branding_image_default = "https://raw.githubusercontent.com/bigbluebutton/greenlight/master/app/assets/images/logo_with_text.png"
+    config.branding_image_default = "https://meet.dmkms.com/bigbluebutton/greenlight/master/app/assets/images/logo_with_text.png"
 
     # Default primary color if the user does not specify one
     config.primary_color_default = "#467fcf"
